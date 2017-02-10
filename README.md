@@ -2,4 +2,6 @@
 
 The Main landing page for Appijumbo website
 
-You can find it also at http://codepen.io/tom_o/pen/WQgqJw.
+https://appijumbo.github.io/landingPage/
+
+or codePen at http://codepen.io/tom_o/pen/WQgqJw.
