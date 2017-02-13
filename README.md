@@ -20,4 +20,6 @@ jQuery 3.11 is now used instaed of the 2.x version it was initially coded with.
 I decided to use this as the basis of my main site.
 
 ---
-https://www.freecodecamp.com/challenges/build-a-personal-portfolio-webpage
+site link: https://appijumbo.github.io/landingPage/
+
+FreeCodeCamp Info: https://www.freecodecamp.com/challenges/build-a-personal-portfolio-webpage
