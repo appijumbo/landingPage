@@ -2,10 +2,10 @@
 
 The site was initaly created for the FreeCodeCamp course so that a user can:
 
-+access all of the portfolio webpage's content just by scrolling.
-+click different buttons that will take me to the portfolio creator's different social media pages.
-+see thumbnail images of different projects the portfolio creator has built (if you haven't built any websites before, use placeholders.)
-+navigate to different sections of the webpage by clicking buttons in the navigation.
+⋅⋅* access all of the portfolio webpage's content just by scrolling.
+⋅⋅* click different buttons that will take me to the portfolio creator's different social media pages.
+⋅⋅* see thumbnail images of different projects the portfolio creator has built (if you haven't built any websites before, use placeholders.)
+⋅⋅* navigate to different sections of the webpage by clicking buttons in the navigation.
 
 This was my first attempt at a personal website. It was coded using Brackets then converted to CodePen, initialy with dropbox acting as my image cloud for URL links etc. 
 It was subsequently ammended to be put on the Github site including the images.
