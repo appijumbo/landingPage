@@ -1171,6 +1171,11 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
     background-size: contain;
 }
 
+#appLink7{
+    background: url("../img/simon3_350x350.jpg");
+    background-size: contain;
+}
+
 .codeExamplesBox {
     position: relative;
     width: 100%;
