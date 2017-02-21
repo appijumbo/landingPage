@@ -1251,6 +1251,8 @@ textarea{
     min-width: 60%;
     font-weight: 700;
     color: white;
+    outline: none;
+    padding-left: 1em;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
