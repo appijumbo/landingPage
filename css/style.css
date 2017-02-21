@@ -1075,7 +1075,7 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
     padding: 100px;
     z-index: 0;
     /* justify-content: center; */
-    /* align-items: center; */
+    align-items: center;
     max-width: 90%;
     margin-bottom: 7vh;
 }
@@ -1232,8 +1232,8 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
     flex-direction: column;
     line-height: 1.3em;
     /* background-color: aqua; */
-    width: 100%;
-    align-items: center;
+    width: 70%;
+    /* align-items: center; */
     margin-top: 4vh;
     margin-bottom: 6vh;
 }
@@ -1274,9 +1274,10 @@ textarea{
 button{
     border: none;
     padding: 0;
-    width: 6vw;
-    height: 6vw;
+    width: 4vw;
+    height: 4vw;
 }
+
 
 .send_button svg{
     background-color: rgb(255, 87, 34);
@@ -1517,6 +1518,14 @@ button{
     }
     
     
+    
+    .email_form{
+    width: 100%;
+}
+
+    
+    
+    
     button{
     border: none;
     padding: 0;
@@ -1579,6 +1588,12 @@ button{
         height: 70px;
     }
     
+    
+    
+.email_form{
+    width: 100%;
+}
+
     
     
 button{
@@ -1723,7 +1738,13 @@ button{
 .git_bubble:focus{
     transform:scale(1.2) rotate(-5deg);
 }
-       
+
+    
+.email_form{
+    width: 100%;
+}
+
+    
 button{
     border: none;
     padding: 0;
@@ -1731,7 +1752,7 @@ button{
     height: 15vw;
 }
     
-    
+
     
 }
 
@@ -1792,6 +1813,12 @@ button{
     transform:scale(1.2) rotate(-5deg);
 }
     
+    
+.email_form{
+    width: 100%;
+}
+
+
     
 button{
     border: none;
