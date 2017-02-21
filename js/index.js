@@ -63,27 +63,25 @@ function draw_triangle(ctx_width, ctx_height, top_h, element, x_origin, y_origin
 
 /****************** SHADE AND LAPTOP ANGLE *********************/
 
-function shade1(h1, w1){
-    var top_height = 0;
-    draw_triangle(w1, h1, top_height, "canvasShade1" ,0, 0, w1, h1);
-}
-
-
-function shade2(h1, w1){
-    var half_width = w1/2;
-    var s_height = $("#codeHere").height() + 270 + $(".cta").height();
-    draw_triangle(w1, s_height, h1, "canvasShade2", w1, 0, half_width, s_height);
-}
-
-var h1 = $("#lapTitWrap").height() + $("#aboutHere").height() + 50;
 var w1 = $("#top").width();
 
-window.onload = shade1(h1, w1);   /*  Draw shades when page loads  */
-window.onload = shade2(h1, w1);
+function shade1(ht1, w1){
+    var top_height = 0;
+    draw_triangle(w1, ht1, top_height, "canvasShade1" ,0, 0, w1, ht1);
+}
+
+/*
+function shade2(ht2, w1){
+    var half_width = w1/2;
+    var s_height = $("#codeHere").height() + 270 + $(".cta").height();
+    draw_triangle(w1, s_height, ht2, "canvasShade2", w1, 0, half_width, s_height);
+}
+*/
+
+window.onload = shade1($("#lapTitWrap").height() + $("#aboutHere").height() + 50, w1);   /*  Draw shades when page loads  */
 
 $(window).resize(function() {  /* keep redrawing shade when page re-sized */
     var h1 = $("#lapTitWrap").height() + $("#aboutHere").height() + 50;
-var w1 = $("#top").width();
+    var w1 = $("#top").width();
     shade1(h1, w1);
-    shade2(h1, w1);
 });
