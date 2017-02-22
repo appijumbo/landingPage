@@ -1072,12 +1072,11 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
     background: rgb(255, 87, 34);
     color: white;
     max-width: 100%;
-    padding: 100px;
+    padding: 0px 100px 0px 100px;
     z-index: 0;
     /* justify-content: center; */
     align-items: center;
     max-width: 90%;
-    margin-bottom: 7vh;
 }
 
 
@@ -1192,6 +1191,7 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
     position: relative;
     width: 100%;
     margin: auto;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -1235,7 +1235,6 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
     width: 70%;
     /* align-items: center; */
     margin-top: 4vh;
-    margin-bottom: 6vh;
 }
 
 
@@ -1274,42 +1273,50 @@ textarea{
 
 
 button{
-    border: none;
-    padding: 0;
-    width: 4vw;
-    height: 4vw;
+    width: 80px;
+    height: 80px;
+    border: solid 5px rgb(255,179,0);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -20px 27px 70px 0px rgba(0,0,0,0.55);
+    background-color: rgb(255, 87, 34);
 }
 
 
 .send_button svg{
-    background-color: rgb(255, 87, 34);
+    background-color: none;
     fill: rgb(255,179,0);
     width: 100%;
     height: 100%;
-    transition: all .2s ease-in-out;
 }
 
 
-.send_button svg:hover,
-.send_button svg:active,
-.send_button svg:focus{
+.send_button svg:hover{
     fill: white;
-    transform:scale(1.3)
+    background-color: none;
+    }
+
+
+.sent{
+    display: block;
+    position: relative;
+    fill: rgb(0,0,0);
+    width: 40%;
+    height: 40%;
+    bottom: 25vh;
+    left: 100vw;
+    transition: all .5s ease-in-out;
+    
 }
 
 
-/*
-.send_button{
-    background-color: rgb(255,170,0);
-    border-color: rgb(255,179,0);
-    border-style: solid;
-    color: white;
-    border-radius: 10px;
-    line-height: 2em;
-    font-size: larger;
-    min-width: 20%;
+.yes{
+    transform: translateX(-70vw);
+    transform-origin: bottom left;
 }
-*/
+
+
+
 
 
 /* ====================================  */
@@ -1438,6 +1445,11 @@ button{
         z-index: 1;
     }
     
+    
+    .git_bubble{
+    bottom: 3vh;
+   } 
+    
 }
 
 @media screen and (max-width: 1000px){
@@ -1477,13 +1489,18 @@ button{
     padding-top: 50px;
     }
     
-    
+/*   
     button{
     border: none;
     padding: 0;
     width: 10vw;
     height: 10vw;
 }
+*/
+    
+    .git_bubble{
+    bottom: 3vh;
+   } 
     
 }
 
@@ -1523,17 +1540,20 @@ button{
     
     .email_form{
     width: 100%;
-}
+    }
 
     
+    /*
+        button{
+        border: none;
+        padding: 0;
+        width: 10vw;
+        height: 10vw;
+    }
+        
+    */
     
-    
-    button{
-    border: none;
-    padding: 0;
-    width: 10vw;
-    height: 10vw;
-}
+
     
 }
 
@@ -1572,39 +1592,39 @@ button{
      
 
 
-.col {
-    left: 30px;
-    padding-top: 100px;
-}
+    .col {
+        left: 30px;
+        padding-top: 100px;
+    }
+        
     
-
-    
-.col h1{
-    
-    text-align: left;
-}
-
-   
-    .codeLink{
-        width: 70px;
-        height: 70px;
+        
+    .col h1{
+        
+        text-align: left;
     }
     
+       
+        .codeLink{
+            width: 70px;
+            height: 70px;
+        }
+        
+        
+        
+    .email_form{
+        width: 100%;
+    }
     
-    
-.email_form{
-    width: 100%;
-}
-
-    
-    
-button{
-    border: none;
-    padding: 0;
-    width: 16vw;
-    height: 16vw;
-}
-    
+        
+    /*
+    button{
+        border: none;
+        padding: 0;
+        width: 16vw;
+        height: 16vw;
+    }
+    */  
     
 
 }
@@ -1712,49 +1732,54 @@ button{
     
     
     
-.git_link{
-    bottom: 0;
-    margin-left: 0;
-}
-
-
-.git_man_box{
-  width: 30vw;
-  height: 20vw;
-}
-
+    .git_link{
+        bottom: 0;
+        margin-left: 0;
+    }
     
-.git_bubble{
-  display: block;
-  position: relative;
-  width: 40vw;
-  height: 40vw;
-  left: 0;
-  bottom: 1vh;
-  z-index: 7000;
-}
-
-
-.git_bubble:hover,
-.git_bubble:active,
-.git_bubble:focus{
-    transform:scale(1.2) rotate(-5deg);
-}
-
     
-.email_form{
-    width: 100%;
-}
-
+    .git_man_box{
+      width: 30vw;
+      height: 20vw;
+    }
     
-button{
-    border: none;
-    padding: 0;
-    width: 15vw;
-    height: 15vw;
-}
+        
+    .git_bubble{
+      display: block;
+      position: relative;
+      width: 40vw;
+      height: 40vw;
+      left: 0;
+      bottom: 1vh;
+      z-index: 7000;
+    }
     
-
+    
+    .git_bubble:hover,
+    .git_bubble:active,
+    .git_bubble:focus{
+        transform:scale(1.2) rotate(-5deg);
+    }
+    
+        
+    .email_form{
+        width: 100%;
+    }
+    
+    
+    /*
+    button{
+        border: none;
+        padding: 0;
+        width: 15vw;
+        height: 15vw;
+    }
+    */    
+    
+        
+    .yes{
+        transform: translateX(-55vw);
+    }
     
 }
 
@@ -1784,50 +1809,58 @@ button{
         font-weight: 600;
     }
 
+        
+        
+    .git_link{
+        bottom: 0;
+        margin-left: 0;
+    }
     
     
-.git_link{
-    bottom: 0;
-    margin-left: 0;
-}
-
-
-.git_man_box{
-  width: 30vw;
-  height: 20vw;
-}
-
+    .git_man_box{
+      width: 30vw;
+      height: 20vw;
+    }
     
-.git_bubble{
-  display: block;
-  position: relative;
-  width: 40vw;
-  height: 40vw;
-  left: 0;
-  bottom: 1vh;
-  z-index: 7000;
-}
-
-
-.git_bubble:hover,
-.git_bubble:active,
-.git_bubble:focus{
-    transform:scale(1.2) rotate(-5deg);
-}
+        
+    .git_bubble{
+      display: block;
+      position: relative;
+      width: 40vw;
+      height: 40vw;
+      left: 0;
+      bottom: 1vh;
+      z-index: 7000;
+    }
     
     
-.email_form{
-    width: 100%;
-}
-
-
+    .git_bubble:hover,
+    .git_bubble:active,
+    .git_bubble:focus{
+        transform:scale(1.2) rotate(-5deg);
+    }
+        
+        
+    .email_form{
+        width: 100%;
+    }
     
-button{
-    border: none;
-    padding: 0;
-    width: 20vw;
-    height: 20vw;
-}
+    
+    /*    
+    button{
+        border: none;
+        padding: 0;
+        width: 20vw;
+        height: 20vw;
+    }
+    */
+    
+    
+    
+    .yes{
+        transform: translateX(-55vw);
+    }
+     
     
 }
 

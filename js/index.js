@@ -19,6 +19,18 @@ burger.addEventListener("click", function (e) {  /*  event handler 'click' is at
 
 
 
+/**********************  SEND EMAIL CLICKED  ***************************/
+
+function sendEmail() {
+  console.log( "email button clicked" );
+  $("#contactForm").find("div.sent").addClass("yes");
+}
+
+
+
+$( "#contactForm button" ).on( "click", sendEmail );
+
+
 
 /***************************  SMOOTH SCROLL **************************/
 
@@ -77,6 +89,8 @@ function shade2(ht2, w1){
     draw_triangle(w1, s_height, ht2, "canvasShade2", w1, 0, half_width, s_height);
 }
 */
+
+
 
 window.onload = shade1($("#lapTitWrap").height() + $("#aboutHere").height() + 50, w1);   /*  Draw shades when page loads  */
 
