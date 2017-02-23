@@ -21,15 +21,34 @@ burger.addEventListener("click", function (e) {  /*  event handler 'click' is at
 
 /**********************  SEND EMAIL CLICKED  ***************************/
 
+var sendButon = document.getElementById("sendButton");
+var emailSent = document.getElementById("success");
+
+
+
+function sendEmail() {
+    emailSent.classList.add("yes");
+    console.log("sendEmail  - > classlist add yes");
+}
+
+
+
+sendButon.addEventListener("click", function (e) {
+    e.preventDefault();
+    sendEmail();
+});
+
+/*
 function sendEmail() {
   console.log( "email button clicked" );
+
   $("#contactForm").find("div.sent").addClass("yes");
 }
 
 
 
 $( "#contactForm button" ).on( "click", sendEmail );
-
+*/
 
 
 /***************************  SMOOTH SCROLL **************************/

@@ -1280,6 +1280,7 @@ button{
     transition: all 0.3s ease-in-out;
     box-shadow: -20px 27px 70px 0px rgba(0,0,0,0.55);
     background-color: rgb(255, 87, 34);
+    outline: none;
 }
 
 
@@ -1291,7 +1292,8 @@ button{
 }
 
 
-.send_button svg:hover{
+.send_button svg:hover,
+.send_button svg:active{
     fill: white;
     background-color: none;
     }
@@ -1306,7 +1308,6 @@ button{
     bottom: 25vh;
     left: 100vw;
     transition: all .5s ease-in-out;
-    
 }
 
 
