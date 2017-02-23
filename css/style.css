@@ -1063,7 +1063,6 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
 
 
 
-
 .codeWrapper {
     display: flex;
     flex-direction: column;
@@ -1078,9 +1077,6 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
     align-items: center;
     max-width: 90%;
 }
-
-
-
 
 
 
@@ -1309,7 +1305,7 @@ button{
     position: relative;
     fill: rgb(0,0,0);
     width: 17%;
-    bottom: 17vh;
+    bottom: 22vh;
     left: 100vw;
     transition: all .5s ease-in-out;
 }
@@ -1344,7 +1340,7 @@ button{
   width: 15vw;
   height: 10vw;
   left: 6vw;
-  background: url(../img/git_man.svg);
+  background: url(../img/git_man2_opt.svg);
   background-repeat: no-repeat;
   z-index: 1000;
 }
@@ -1435,6 +1431,82 @@ button{
 
 /*  =====================  MEDIA QUERIES  =====================  */
 /*  ===========================================================  */
+
+@media screen and (min-width: 1501px){
+    
+    
+    .git_man_box{
+    width: 8vw;
+    height: 7vw;
+    left: 24%;
+    bottom: -5px;
+    }
+
+
+    .git_bubble{
+    width: 11vw;
+    height: 10vw;
+    left: 20%;
+    }
+    
+    .emailWrapper {
+    display: block;
+    height: 48em;
+    margin-left: 20%;
+    }
+
+    
+    .sent{
+    width: 17%;
+    bottom: 25vh;
+    left: 100vw;
+    }
+
+    .yes{
+    transform: translateX(-73vw);
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 1500px){
+    
+    
+    .git_man_box{
+    width: 10vw;
+    height: 8vw;
+    left: 8vw;
+    }
+
+
+    .git_bubble{
+    width: 15vw;
+    height: 13vw;
+    left: 4vw;
+    }
+    
+    .emailWrapper {
+    display: block;
+    height: 48em;
+    margin-left: 20%;
+    }
+
+    
+    .sent{
+    width: 17%;
+    bottom: 25vh;
+    left: 100vw;
+    }
+
+    .yes{
+    transform: translateX(-68vw);
+    }
+    
+}
+
+
 
 
 @media screen and (max-width: 1200px){
