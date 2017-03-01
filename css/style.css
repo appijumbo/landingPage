@@ -1178,20 +1178,11 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
     background-size: contain;
 }
 
-<<<<<<< HEAD
-#appLink7{ 
-    background: url("../img/simon3_350x350.jpg");
-    background-size: contain;
-}
-
-||||||| merged common ancestors
-=======
 #appLink7{
     background: url("../img/simon3_350x350.jpg");
     background-size: contain;
 }
 
->>>>>>> devform
 .codeExamplesBox {
     position: relative;
     width: 100%;
