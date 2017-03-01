@@ -1,5 +1,8 @@
 # Personal website
 
+
+<a href="https://appijumbo.github.io/landingPage/"><img src="./extras/land.jpg" width="600"></a>
+
 The site was initaly created for the FreeCodeCamp course so that a user can:
 
   * access all of the portfolio webpage's content just by scrolling.
