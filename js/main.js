@@ -193,10 +193,6 @@ var msgValidError = document.querySelector("#msgValidError");
 
 
 
-               
-
-
-
 
 
 /*****************    MENU TOGGLE CONTROL      *******************/
