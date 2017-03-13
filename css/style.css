@@ -249,6 +249,9 @@ svg:not(:root) {
  * 2. Remove the margin in Firefox and Safari.
  */
 
+
+
+
 button,
 input,
 optgroup,
@@ -321,9 +324,9 @@ button:-moz-focusring,
  */
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  border: none;
+  margin: 0;
+  padding: 0em 0em 0em 0em;
 }
 
 /**
@@ -1081,13 +1084,10 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
 
 
 .codeTagBox { 
-    margin: auto;
-    padding-top: 4vh;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: flex-start;
-    z-index: 1;
+    margin-left: 10vw;
+    margin-top: 5vh;
 }
 
 
@@ -1220,18 +1220,45 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
 
 /*  ============  EMAIL FORM  =============  */
 /*  ==================================================  */
-.emailWrapper {
-    display: block;
-    margin-left: 20%;
-    /* width: 100%; */
-    height: 48em;
-    /* padding-bottom: 25vh; */
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: none;
+    margin-left: 5%;
 }
+
+
+label{
+    font-weight: 700;
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 0.6rem;
+}
+
+.emailWrapper {
+    /*display: block;
+    margin-left: 20%;
+    width: 100%;
+    height: 48em;
+    padding-bottom: 25vh; */
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
 
 .email_form{
     display: flex;
     flex-direction: column;
-    line-height: 1.3em;
     /* background-color: aqua; */
     width: 70%;
     /* align-items: center; */
@@ -1239,41 +1266,75 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
 }
 
 
+/*  invalid form textarea message - RED */
+textarea.dirty:not(:focus):invalid {
+    background-color: #be1616;
+    }
+
+/*  valid form textarea message  - GREEN*/
+textarea.dirty:not(:focus):valid {
+    background-color: #0d9f0d;
+    border-color: rgb(255, 255, 255);
+    }
+
+
+input.dirty:not(:focus):invalid {
+    background-color: #be1616;
+    }
+
+/*  valid form input entry  - GREEN*/
+input.dirty:not(:focus):valid {
+    background-color: #0d9f0d;
+    border-color: rgb(255, 255, 255);
+    }
+
+
 input,
 textarea{
     background-color: inherit;
-    border-color: rgb(255,179,0);
+    border-color: rgba(255, 179, 0, 0.2);
     border-style: solid;
     border-width: 4px;
     border-radius: 10px;
     line-height: 2em;
     font-size: larger;
-    min-width: 60%;
+    min-width: 80%;
     font-weight: 700;
     color: white;
     outline: none;
     padding-left: 1em;
 }
 
+
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: rgb(255,179,0);
+  color: rgba(255, 179, 0, 0.7);
   padding-left: 1em;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: rgb(255,179,0);
+  color: rgba(255, 179, 0, 0.7);
   padding-left: 1em;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: rgb(255,179,0);
+  color: rgba(255, 179, 0, 0.7);
   padding-left: 1em;
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: rgb(255,179,0);
+  color: rgba(255, 179, 0, 0.7);
   padding-left: 1em;
 }
 
 
-button{
+
+
+.highliteInput{
+    border-color: rgb(255, 179, 0);
+}
+
+
+
+
+button[type="submit"]{
     width: 80px;
     height: 80px;
     border: solid 5px rgb(255,179,0);
@@ -1282,6 +1343,7 @@ button{
     box-shadow: -20px 27px 70px 0px rgba(0,0,0,0.55);
     background-color: rgb(255, 87, 34);
     outline: none;
+    margin-top: 2.6rem;
 }
 
 
@@ -1291,6 +1353,7 @@ button{
     width: 100%;
     height: 100%;
 }
+
 
 
 .send_button svg:hover,
@@ -1312,12 +1375,73 @@ button{
 
 
 .yes{
-    transform: translateX(-70vw);
+    transform: translateX(-60vw);
     transform-origin: bottom left;
 }
 
 
+.inputRow,
+.inputMesg{
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+}
 
+
+.inputRow{
+    height: 3rem;
+}
+
+
+.inputMesg{
+    height: 12rem;
+}
+
+
+.validTick[data-tickvalid="true"]{
+    display:flex;
+    width: 5%;
+}
+
+
+.validTick[data-tickvalid="false"]{
+    display: none;
+}
+
+
+.hide{
+    display: none;
+}
+
+
+
+
+.validityError[data-validityError="true"]{
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+    font-weight: 700;
+    opacity: 1;
+    transform: translateY(-0.6rem);
+    transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+
+
+.validityError[data-validityError="false"]{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    font-weight: 700;
+    line-height: 0rem;
+    opacity: 0;
+    transform: translateY(0.6rem);
+    transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
 
 
 /* ====================================  */
@@ -1432,7 +1556,7 @@ button{
 /*  =====================  MEDIA QUERIES  =====================  */
 /*  ===========================================================  */
 
-@media screen and (min-width: 1501px){
+@media screen and (min-width: 2501px){
     
     
     .git_man_box{
@@ -1449,11 +1573,7 @@ button{
     left: 20%;
     }
     
-    .emailWrapper {
-    display: block;
-    height: 48em;
-    margin-left: 20%;
-    }
+
 
     
     .sent{
@@ -1463,7 +1583,46 @@ button{
     }
 
     .yes{
-    transform: translateX(-73vw);
+    transform: translateX(-72vw);
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1501px) and (max-width: 2500px){
+    
+    
+    .git_man_box{
+    width: 8vw;
+    height: 7vw;
+    left: 24%;
+    bottom: -5px;
+    }
+
+
+    .git_bubble{
+    width: 11vw;
+    height: 10vw;
+    left: 20%;
+    }
+    
+
+
+    
+    .sent{
+    width: 17%;
+    bottom: 25vh;
+    left: 100vw;
+    }
+
+    .yes{
+    transform: translateX(-70vw);
     }
     
 }
@@ -1487,11 +1646,7 @@ button{
     left: 4vw;
     }
     
-    .emailWrapper {
-    display: block;
-    height: 48em;
-    margin-left: 20%;
-    }
+ 
 
     
     .sent{
@@ -1501,7 +1656,7 @@ button{
     }
 
     .yes{
-    transform: translateX(-68vw);
+    transform: translateX(-70vw);
     }
     
 }
@@ -1528,11 +1683,7 @@ button{
     bottom: 3vh;
    } 
     
-    .emailWrapper {
-    display: block;
-    height: 48em;
-    margin-left: 20%;
-    }
+
 
     
 }
@@ -1574,25 +1725,12 @@ button{
     padding-top: 50px;
     }
     
-/*   
-    button{
-    border: none;
-    padding: 0;
-    width: 10vw;
-    height: 10vw;
-}
-*/
     
     .git_bubble{
     bottom: 3vh;
    }
     
-    
-    .emailWrapper {
-    display: block;
-    height: 47em;
-    margin-left: 20%;
-    }
+
 
     
 }
@@ -1635,23 +1773,7 @@ button{
     width: 100%;
     }
 
-    
-    /*
-        button{
-        border: none;
-        padding: 0;
-        width: 10vw;
-        height: 10vw;
-    }
-        
-    */
-    
-    .emailWrapper {
-    display: block;
-    height: 40em;
-    margin-left: 5%;
-    margin-right: 5%;
-    }
+  
 
     
 }
@@ -1715,23 +1837,14 @@ button{
         width: 100%;
     }
     
-        
-    /*
-    button{
-        border: none;
-        padding: 0;
-        width: 16vw;
-        height: 16vw;
-    }
-    */  
-    
-    .emailWrapper {
-    display: block;
-    height: 40em;
-    margin-left: 5%;
-    margin-right: 5%;
-    }
+   
 
+    
+    .codeTagBox{
+    margin: 0;
+     margin-left: 5%;
+    }
+    
 }
 
 
@@ -1806,6 +1919,7 @@ button{
     
     .codeTagBox{
         margin: 0;
+        margin-left: 5%;
     }
     
     .tagBox.tagText{
@@ -1871,15 +1985,7 @@ button{
         width: 100%;
     }
     
-    
-    /*
-    button{
-        border: none;
-        padding: 0;
-        width: 15vw;
-        height: 15vw;
-    }
-    */    
+      
     
     .sent{
     bottom: 27vh;
@@ -1888,15 +1994,10 @@ button{
     
         
     .yes{
-        transform: translateX(-55vw);
+        transform: translateX(-75vw);
     }
     
-    .emailWrapper {
-    display: block;
-    height: 40em;
-    margin-left: 5%;
-    margin-right: 5%;
-    }
+    
     
 }
 
@@ -1962,33 +2063,19 @@ button{
         width: 100%;
     }
     
-    
-    /*    
-    button{
-        border: none;
-        padding: 0;
-        width: 20vw;
-        height: 20vw;
-    }
-    */
+  
 
-.sent{
+    .sent{
     bottom: 30vh;
     left: 110vw;
     }
     
     .yes{
-        transform: translateX(-55vw);
+        transform: translateX(-75vw);
     }
      
     
-    .emailWrapper {
-    display: block;
-    height: 40em;
-    margin-left: 5%;
-    margin-right: 5%;
-    }
-    
+ 
 }
 
 
