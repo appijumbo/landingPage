@@ -199,7 +199,7 @@
                 <label for="frmNameA">Name</label>
                 <p id="nameValidError" class="validityError" data-validityerror="false">The name must be between 1 and 30 characters</p>
                 <div class="inputRow">
-                    <input id="frmNameA" type="text" name="name" maxlength="30" placeholder="Full name" required autocomplete="name">
+                    <input id="frmNameA" type="text" name="name" maxlength="30" placeholder="Full name" required autocomplete="name" tabindex="1">
                     <svg id="nameTick" class="validTick" data-tickvalid="false"><use xlink:href="#tick"/></svg>
                 </div>
     
@@ -207,7 +207,7 @@
                 <label for="frmEmailA">Email</label>
                 <p id="email1ValidError" class="validityError" data-validityerror="false">not an email format. e.g. myemail@google.com</p>
                 <div class="inputRow">
-                    <input id="frmEmailA" type="email" name="email" placeholder="name@example.com" required autocomplete="email">
+                    <input id="frmEmailA" type="email" name="email" placeholder="name@example.com" required autocomplete="email" tabindex="2">
                     <svg id="email1Tick" class="validTick" data-tickvalid="false"><use xlink:href="#tick"/></svg>
                 </div>
  
@@ -215,7 +215,7 @@
                 <label for="frmEmailC">Confirm Email</label>
                 <p id="email2ValidError" class="validityError" data-validityerror="false">Sorry but the email addresses aren't the same</p>
                 <div class="inputRow">
-                    <input id="frmEmailC" type="email" name="emailC" placeholder="name@example.com" required autocomplete="email">
+                    <input id="frmEmailC" type="email" name="emailC" placeholder="name@example.com" required autocomplete="email" tabindex="3">
                     <svg id="email2Tick" class="validTick" data-tickvalid="false"><use xlink:href="#tick"/></svg>
                 </div>
                
@@ -223,12 +223,12 @@
                 <label for="message">Message</label>
                 <p id="msgValidError" class="validityError" data-validityerror="false">Your message must be between 1 and 300 characters</p>
                 <div class="inputMesg">
-                    <textarea id="message" placeholder="Message" maxlength="300" required autocomplete="text"></textarea>
+                    <textarea id="message" placeholder="Message" maxlength="300" required autocomplete="text" tabindex="4"></textarea>
                     <svg id="msgTick" class="validTick" data-tickvalid="false"><use xlink:href="#tick"/></svg>
                 </div>               
                 
                 
-                <button id="sendButton" class="send_button" type="submit" alt="send form button"><svg><use xlink:href="#sendB"/></svg></button>
+                <button id="sendButton" class="send_button" type="submit" alt="send form button" tabindex="5"><svg><use xlink:href="#sendB"/></svg></button>
                 <!-- <svg><use xlink:href="#sendB"/></svg> -->
             </fieldset>
               
