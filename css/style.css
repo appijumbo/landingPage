@@ -1087,7 +1087,7 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
     display: flex;
     flex-wrap: wrap;
     margin-left: 10vw;
-    margin-top: 5vh;
+    padding-top: 5vh;
 }
 
 
@@ -1592,7 +1592,7 @@ button[type="submit"]{
 
 
 
-
+/*---------------------------------------------------------------*/
 
 
 @media screen and (min-width: 1501px) and (max-width: 2500px){
@@ -1630,6 +1630,9 @@ button[type="submit"]{
 
 
 
+/*---------------------------------------------------------------*/
+
+
 @media screen and (max-width: 1500px){
     
     
@@ -1664,6 +1667,9 @@ button[type="submit"]{
 
 
 
+
+/*---------------------------------------------------------------*/
+
 @media screen and (max-width: 1200px){
     
     #lapytwister{
@@ -1683,10 +1689,14 @@ button[type="submit"]{
     bottom: 3vh;
    } 
     
-
-
     
 }
+
+
+
+
+
+/*---------------------------------------------------------------*/
 
 @media screen and (max-width: 1000px) and (orientation: portrait){
     
@@ -1730,11 +1740,13 @@ button[type="submit"]{
     bottom: 3vh;
    }
     
-
-
     
 }
 
+
+
+
+/*---------------------------------------------------------------*/
 
 @media screen and (max-width: 700px) and (orientation: portrait){
  
@@ -1772,14 +1784,13 @@ button[type="submit"]{
     .email_form{
     width: 100%;
     }
-
   
-
-    
 }
 
 
 
+
+/*---------------------------------------------------------------*/
 
 @media screen and (max-width: 560px) and (orientation: portrait){
     
@@ -1841,7 +1852,7 @@ button[type="submit"]{
 
     
     .codeTagBox{
-    margin: 0;
+     margin: 0;
      margin-left: 5%;
     }
     
@@ -1850,6 +1861,8 @@ button[type="submit"]{
 
 
 
+
+/*---------------------------------------------------------------*/
 
 @media screen and (max-width: 480px) and (orientation: portrait){
     
@@ -2002,6 +2015,9 @@ button[type="submit"]{
 }
 
 
+
+
+/*---------------------------------------------------------------*/
 
 @media screen and (max-width: 400px) and (orientation: portrait){
     
