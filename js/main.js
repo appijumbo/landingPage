@@ -3,11 +3,10 @@ var burger = document.getElementById("burger-button");
 var sendButton = document.getElementById("sendButton");
 var inputs = document.getElementsByTagName("input");
 var msg = document.getElementById("message");
-var frmEmailA = document.getElementById("frmEmailA");
 var elem = document.getElementById("frmEmailC");
 var frmNameA = document.getElementById("frmNameA");
+var frmEmailA = document.getElementById("frmEmailA");
 var success = document.getElementById("success");
-
 
 var nameTick = document.querySelector("#nameTick");
 var email1Tick = document.querySelector("#email1Tick");
@@ -148,7 +147,7 @@ var msgValidError = document.querySelector("#msgValidError");
 
 
 
-/*****************   Check entire form is valid and only if it is valid allow it to be submitted    **********/
+/*****************   Check entire form is valid and only if it is valid allow it to be submitted    *********/
 
       function initForm() {
         form.addEventListener("submit", function(evt) {
@@ -158,11 +157,45 @@ var msgValidError = document.querySelector("#msgValidError");
             return false;
           } 
             else {
-                   success.className = "sent yes";
-                   //form.submit();
+                   // don't submitt here bu use send button on submitt instead
                 }
         });
       }
+
+
+
+/*****************     When the submit button is enabled can submit via ajax    ***************/
+
+$('#contactForm').on('submit', function(e) {
+	e.preventDefault();
+    var name = $( "input[type=text][name=name]" ).val();
+    var email = $( "input[type=email][name=email]" ).val();
+    var comments = $("textarea[name=message]").val();
+    
+	$.ajax({
+		url: '//formspree.io/tom@appijumbo.com',
+		method: 'POST',
+		data:{ name:name,
+              email:email, 
+              comments:comments,
+              _subject:"An Appijumbo form Submission",
+             },
+		dataType: 'json',
+		success: function(data) {
+            console.log("success  " + data);
+            success.innerHTML = "<svg><use xlink:href='#tick'/></svg>";
+            success.className = "sent yes";
+		},
+		error: function(err) {
+			console.log("failed  " + err);
+            success.innerHTML = "<p>sorry, mail server is not responding. Please try again later!</p>";
+            success.className = "fail";
+		}
+	});
+});
+
+
+
 
 
 

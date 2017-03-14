@@ -1370,14 +1370,24 @@ button[type="submit"]{
     fill: rgb(0,0,0);
     width: 17%;
     bottom: 22vh;
-    left: 100vw;
-    transition: all .5s ease-in-out;
+    /*left: 100vw;
+    transition: all .5s ease-in-out;  */
 }
 
 
 .yes{
     transform: translateX(-60vw);
     transform-origin: bottom left;
+}
+
+.fail {
+    position: relative;
+    font-weight: 700;
+    width: 30rem;
+    margin-left: 25rem;
+    font-size: x-large;
+    bottom: 7.5rem;
+    color: white;
 }
 
 
@@ -1626,6 +1636,10 @@ button[type="submit"]{
     transform: translateX(-70vw);
     }
     
+    .fail {
+    margin-left: 24rem;
+    }
+    
 }
 
 
@@ -1634,7 +1648,7 @@ button[type="submit"]{
 /*---------------------------------------------------------------*/
 
 
-@media screen and (max-width: 1500px){
+@media screen and (min-width: 1201px) and (max-width: 1500px){
     
     
     .git_man_box{
@@ -1663,6 +1677,10 @@ button[type="submit"]{
     transform: translateX(-70vw);
     }
     
+    .fail {
+    margin-left: 14rem;
+    }
+    
 }
 
 
@@ -1671,7 +1689,7 @@ button[type="submit"]{
 
 /*---------------------------------------------------------------*/
 
-@media screen and (max-width: 1200px){
+@media screen and (min-width: 1001px) and (max-width: 1200px){
     
     #lapytwister{
     transform:rotate(45deg);
@@ -1689,6 +1707,14 @@ button[type="submit"]{
     .git_bubble{
     bottom: 3vh;
    } 
+    
+    
+    .fail {
+    margin-left: 16rem;
+    font-size: 1.3rem;
+    width: 24rem;
+    }
+
     
     
 }
@@ -1741,9 +1767,80 @@ button[type="submit"]{
     bottom: 3vh;
    }
     
+
+    .fail {
+    margin-left: 16rem;
+    font-size: 1.1rem;
+    width: 22rem;
+    }
+    
     
 }
 
+
+
+
+
+/*---------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px) and (orientation: landscape){
+    
+    #burgerOn{
+    display: block;
+    }
+    
+    #navbarOn{
+        display: none;
+    }
+    
+    .main-body-wrapper{
+        width: 100vw;
+    }
+    
+    .navbar-main{
+        width: 100vw;
+    }
+    
+    
+    #lapytwister{
+    transform:rotate(45deg);
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    }
+    
+    
+    .col{
+        left: 15vw;
+        z-index: 1;
+    }
+    
+    span.about-title{
+    padding: 0px;
+    padding-top: 50px;
+    }
+    
+    
+    .git_bubble{
+    bottom: 3vh;
+   }
+    
+    .fail {
+    margin-left: 15rem;
+    font-size: 1.1rem;
+    width: 14rem;
+        line-height: 1.3rem;
+    }
+    
+    .fail {
+    margin-left: 15rem;
+    font-size: 1.2rem;
+    width: 17rem;
+    line-height: 1.5rem;
+    }
+    
+    
+}
 
 
 
@@ -1784,6 +1881,10 @@ button[type="submit"]{
     
     .email_form{
     width: 100%;
+    }
+    
+     .fail {
+    margin-left: 24rem;
     }
   
 }
@@ -1849,12 +1950,14 @@ button[type="submit"]{
         width: 100%;
     }
     
-   
-
     
     .codeTagBox{
      margin: 0;
      margin-left: 5%;
+    }
+    
+     .fail {
+    margin-left: 24rem;
     }
     
 }
@@ -2010,6 +2113,16 @@ button[type="submit"]{
     .yes{
         transform: translateX(-75vw);
     }
+    
+
+    .fail {
+    margin-left: 8rem;
+    font-size: 0.9rem;
+    width: 11rem;
+    font-weight: 900;
+    line-height: 1.3rem;
+    }
+    
 
 }
 
@@ -2089,6 +2202,13 @@ button[type="submit"]{
         transform: translateX(-75vw);
     }
      
+    
+    .fail {
+    margin-left: 8rem;
+    font-size: 0.9rem;
+    width: 11rem;
+    font-weight: 900;
+    }
     
  
 }

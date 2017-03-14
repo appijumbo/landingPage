@@ -192,8 +192,8 @@
     
 <!--   =======================   -->
    
-        <form id="contactForm" method="POST" action="https://formspree.io/tom@appijumbo.com">
-           
+        <form id="contactForm" >
+        <!-- <form id="contactForm" method="POST" action="https://formspree.io/tom@appijumbo.com"> -->   
             <fieldset class="email_form">
                
                 <label for="frmNameA">Name</label>
@@ -223,13 +223,12 @@
                 <label for="message">Message</label>
                 <p id="msgValidError" class="validityError" data-validityerror="false">Your message must be between 1 and 300 characters</p>
                 <div class="inputMesg">
-                    <textarea id="message" placeholder="Message" maxlength="300" required autocomplete="text" tabindex="4"></textarea>
+                    <textarea id="message" name="message" placeholder="Message" maxlength="300" required autocomplete="text" tabindex="4"></textarea>
                     <svg id="msgTick" class="validTick" data-tickvalid="false"><use xlink:href="#tick"/></svg>
                 </div>               
                 
                 
-                <button id="sendButton" class="send_button" type="submit" alt="send form button" tabindex="5"><svg><use xlink:href="#sendB"/></svg></button>
-                <!-- <svg><use xlink:href="#sendB"/></svg> -->
+                <button id="sendButton" class="send_button" type="submit" value="submit" alt="send form button" tabindex="5"><svg><use xlink:href="#sendB"/></svg></button>
             </fieldset>
               
         </form>                     
@@ -237,10 +236,8 @@
 <!--  ======================== -->                                                   
     
   
-            <div id="success" class="sent" alt="form successfully sent">
-             <svg><use xlink:href="#tick"/></svg>
-            </div>
-           
+            <div id="success"></div>
+           <!-- <svg><use xlink:href="#tick"/></svg> -->
                                     
 </div><!-- End of emailWrapper  --> 
 
