@@ -1225,7 +1225,7 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
 fieldset{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     border: none;
     margin-left: 5%;
 }
