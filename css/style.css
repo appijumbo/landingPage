@@ -976,12 +976,6 @@ span.about-title{
 }
 
 
-#twitter_logo{
-    background: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20viewBox%3D%220%200%20300%20300%22%20height%3D%22300%22%20width%3D%22300%22%3E%3Cdefs%3E%3CclipPath%20clipPathUnits%3D%22userSpaceOnUse%22%3E%3Crect%20height%3D%2247250%22%20width%3D%2228000%22%20y%3D%220%22%20x%3D%220%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20transform%3D%22translate%280%2C-752.36216%29%22%3E%3Cg%20class%3D%22SlideGroup%22%20transform%3D%22matrix%280.01068555%2C0%2C0%2C0.01068555%2C0.8272636%2C752.99172%29%22%3E%3Cg%20clip-path%3D%22url%28%23presentation_clip_path%29%22%20class%3D%22Slide%22%3E%3Cg%20class%3D%22Page%22%3E%3Cg%20class%3D%22Group%22%3E%3Cg%20class%3D%22com.sun.star.drawing.CustomShape%22%3E%3Cpath%20d%3D%22M14000%2028000%200%2028000%200%200l28000%200%200%2028000-14000%200z%22%20fill%3D%22%23ff5722%22/%3E%3C/g%3E%3Cg%20class%3D%22com.sun.star.drawing.ClosedBezierShape%22%3E%3Cpath%20d%3D%22m13918%2012211c-72-126-162-791-162-773%200%2018%2072-701%2072-701%200%200%20252-666%20252-612%200%2036%20234-503%20234-503l413-521%20737-504%20683-323%20629-144%20558-54%20647%2072%20683%20216%20557%20323%20342%20252%20179%20198%20378-72%20503-162%20504-180%20323-126%20521-287-107%20233c0%200-234%20360-126%20324%20108-18-378%20503-378%20503l-359%20414-270%20180-323%20197%20521-36%20323-108%20540-125%20413-144%20234-126-270%20288-323%20467-234%20270-360%20323-287%20162-270%20234%2018%20467c0%200-90%201240-90%201169%200-90-269%201402-269%201402l-306%20809-431%201006-522%20881-737%20989-683%20773-1043%20809-1240%20755-1078%20449-1241%20342-1348%20180c0%200-1258%2053-1222%2053l-1564-179-1475-396c0%200-1078-449-1042-449%2018%200-863-450-863-450l719%2036%20899-36%201007-197%20862-324%20719-288%20935-665c0%200-377%200-359%200%2018%200-665-126-647-126%2036%200-666-287-666-287%200%200-503-342-485-342%2018%200-611-647-593-647%2018%200-396-575-396-575l-90-378c0%200%20486%20126%20504%20126%2036%200%20629-18%20629-18l378-144-522-143-791-360-521-521-557-791-252-737c0%200-90-773-90-791%200-36%20234%20126%20234%2090%200-18%20485%20233%20485%20233l845%2090-342-269c0%200-611-594-593-594%2036%200-359-701-359-701l-234-845%2036-916c0%200%20198-791%20198-755%200%2072%20215-450%20215-450l306%20378c0%200%20593%20647%20611%20647%2018%200%20611%20593%20665%20575%2054-18%20737%20521%20737%20521l755%20414%20558%20234c0%200%20629%20287%20629%20251%200-36%20647%20234%20647%20234l737%20144%20701%2090%20845%2072z%22%20fill%3D%22%23fff%22/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E);
-    
-    background-size: cover;
-} 
-
 #code_logo{
     background: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20viewBox%3D%220%200%20300%20300%22%20height%3D%22300%22%20width%3D%22300%22%3E%3Cstyle%3E.s0%7Bfill%3Anone%3Bstroke-linejoin%3Around%3Bstroke-width%3A400%3Bstroke%3A%23fff%3B%7D%3C/style%3E%3Cdefs%3E%3CclipPath%20clipPathUnits%3D%22userSpaceOnUse%22%3E%3Crect%20height%3D%2247250%22%20width%3D%2228000%22%20y%3D%220%22%20x%3D%220%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20transform%3D%22translate%280%2C-752.36216%29%22%3E%3Cg%20class%3D%22SlideGroup%22%20transform%3D%22matrix%280.01082455%2C0%2C0%2C0.01082455%2C-0.40548964%2C750.50799%29%22%3E%3Cg%20clip-path%3D%22url%28%23presentation_clip_path%29%22%20class%3D%22Slide%22%3E%3Cg%20class%3D%22Page%22%3E%3Cg%20class%3D%22Group%22%3E%3Cg%20class%3D%22com.sun.star.drawing.CustomShape%22%3E%3Cpath%20d%3D%22M14000%2028050%200%2028050%200%2050l28000%200%200%2028000-14000%200z%22%20fill%3D%22%23ff5722%22/%3E%3C/g%3E%3Cg%20class%3D%22Group%22%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22m13683%2011768%200-6805%22%20class%3D%22s0%22/%3E%3C/g%3E%3Cg%20class%3D%22Group%22%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22M13682%2011768%205483%2017139%22%20class%3D%22s0%22/%3E%3C/g%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22M13682%2022510%205483%2017139%22%20class%3D%22s0%22/%3E%3C/g%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22M21882%2017139%2013683%2011768%22%20class%3D%22s0%22/%3E%3C/g%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22m21882%2017139-8199%205371%22%20class%3D%22s0%22/%3E%3C/g%3E%3C/g%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22m21882%2017138%200-6805%22%20class%3D%22s0%22/%3E%3C/g%3E%3Cg%20class%3D%22Group%22%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22M13682%204973%205483%2010344%22%20class%3D%22s0%22/%3E%3C/g%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22M13682%2015715%205483%2010344%22%20class%3D%22s0%22/%3E%3C/g%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22M21882%2010344%2013683%204973%22%20class%3D%22s0%22/%3E%3C/g%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22m21882%2010344-8199%205371%22%20class%3D%22s0%22/%3E%3C/g%3E%3C/g%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22m5464%2017179%200-6805%22%20class%3D%22s0%22/%3E%3C/g%3E%3Cg%20class%3D%22com.sun.star.drawing.LineShape%22%3E%3Cpath%20d%3D%22m13683%2022590%200-6805%22%20class%3D%22s0%22/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E);
     
@@ -1069,17 +1063,15 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
 
 .codeWrapper {
     display: flex;
-    flex-direction: column;
-    /* align-items: center; */
     height: auto;
     background: rgb(255, 87, 34);
     color: white;
     max-width: 100%;
     padding: 0px 100px 0px 100px;
     z-index: 0;
-    /* justify-content: center; */
     align-items: center;
     max-width: 90%;
+    /*padding-top: 10vh;*/
 }
 
 
@@ -1087,7 +1079,9 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
 .codeTagBox { 
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     margin-left: 10vw;
+    margin-right: 10vw;
     padding-top: 5vh;
 }
 
@@ -1135,7 +1129,14 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
 
 
 
+p{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
 
+h4{
+    margin-bottom: 0.1rem;
+}
 
 
 /*  ============  CODE EXAMPLE BUTTONS  =============  */
@@ -1144,11 +1145,30 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
 
 /********  LINKS TO APPS TO CONVERTED TO  A JAVASCRIPT ARRAY   *********/
 
-#appLink1{ 
+
+/*********  web links  *********/
+#webLink1{ 
     background: url("../img/toast_350x350.jpg");
     background-size: contain;
 }
 
+
+#webLink2{ 
+    background: url("../img/SEO_350x350.jpg");
+    background-size: contain;
+}
+
+#webLink3{ 
+    background: url("../img/hardie_350x350.jpg");
+    background-size: contain;
+}
+
+#webLink4{ 
+    background: url("../img/toastWP_350x350.jpg");
+    background-size: contain;
+}
+
+/*********  app links  *********/
 
 #appLink2{ 
     background: url("../img/promodo1_350x350.jpg");
@@ -1168,12 +1188,6 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
 }
 
 
-#appLink5{ 
-    background: url("../img/hardie_350x350.jpg");
-    background-size: contain;
-}
-
-
 #appLink6{ 
     background: url("../img/weatherApp1_350x350.jpg");
     background-size: contain;
@@ -1183,6 +1197,40 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
     background: url("../img/simon3_350x350.jpg");
     background-size: contain;
 }
+
+
+#appLink8{
+    background: url("../img/wikiview_350x350.jpg");
+    background-size: contain;
+}
+
+
+
+/**********   JS 8-bit Games    ********/
+
+#gameLink1{
+    background: url("../img/pong_350x350.jpeg");
+    background-size: contain;
+}
+
+
+#gameLink2{
+    background: url("../img/spaceInv_350x350.jpg");
+    background-size: contain;
+}
+
+
+#gameLink3{
+    background: url("../img/snake_350x350.jpeg");
+    background-size: contain;
+}
+
+
+
+
+
+
+
 
 .codeExamplesBox {
     position: relative;
@@ -1225,9 +1273,8 @@ the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
 fieldset{
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
     border: none;
-    margin-left: 5%;
+    /* margin-left: -5%; */
 }
 
 
@@ -1238,33 +1285,18 @@ label{
     padding-bottom: 0.6rem;
 }
 
-.emailWrapper {
-    /*display: block;
-    margin-left: 20%;
-    width: 100%;
-    height: 48em;
-    padding-bottom: 25vh; */
+
+.formWrapper{
+    /* margin-top: -4vh; */
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 form{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    flex-direction: row;
-    justify-content: center;
     padding-bottom: 10vh;
-    
-}
-
-
-.email_form{
-    display: flex;
-    flex-direction: column;
-    /* background-color: aqua; */
-    width: 70%;
-    /* align-items: center; */
-    margin-top: 4vh;
 }
 
 
@@ -1300,7 +1332,7 @@ textarea{
     border-radius: 10px;
     line-height: 2em;
     font-size: larger;
-    min-width: 80%;
+    width: 100%;
     font-weight: 700;
     color: white;
     outline: none;
@@ -1948,7 +1980,7 @@ button[type="submit"]{
         
         
     .email_form{
-        width: 100%;
+        width: 80vw;
     }
     
     
@@ -1959,6 +1991,10 @@ button[type="submit"]{
     
      .fail {
     margin-left: 24rem;
+    }
+    
+    fieldset{
+        margin-left: 0;
     }
     
 }
@@ -2100,7 +2136,7 @@ button[type="submit"]{
     
         
     .email_form{
-        width: 100%;
+        width: 80vw;
     }
     
       
@@ -2122,6 +2158,11 @@ button[type="submit"]{
     width: 11rem;
     font-weight: 900;
     line-height: 1.3rem;
+    }
+    
+    
+    fieldset{
+        margin-left: 0;
     }
     
 
@@ -2189,7 +2230,7 @@ button[type="submit"]{
         
         
     .email_form{
-        width: 100%;
+        width: 80vw;
     }
     
   
@@ -2211,6 +2252,10 @@ button[type="submit"]{
     font-weight: 900;
     }
     
+    
+    fieldset{
+        margin-left: 0;
+    }
  
 }
 
