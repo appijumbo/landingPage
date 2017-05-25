@@ -1287,20 +1287,12 @@ label{
 
 
 .formWrapper{
-<<<<<<< HEAD
-    /* margin-top: -4vh; */
-    margin-bottom: 5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-=======
     margin-bottom: 5vh;
     /*display: flex;
     flex-direction: column;
     align-items: center;*/
     padding-left: 25%;
     width: 50%
->>>>>>> master
 }
 
 
