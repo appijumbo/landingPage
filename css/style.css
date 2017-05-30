@@ -914,6 +914,7 @@ h2 {
     z-index: 4;
 }
 
+
 .aboutCol { 
     align-content: center;
     width: 100%;
@@ -921,14 +922,16 @@ h2 {
     flex-direction: column;
     align-items: center;
     height: auto;   /*  Adjust height of the example */
-    /*background: #138655; */
     color: #111;
     max-width: 100%;
-    margin-top: 5vh;
+    margin-top: 17vh;
     margin-bottom: 3vh;
     overflow: hidden;
-    
+    z-index: 10;
 }
+
+
+
 
 .ab-col {
     display: flex;
