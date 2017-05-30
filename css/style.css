@@ -1999,6 +1999,10 @@ button[type="submit"]{
         margin-left: 0;
     }
     
+    .formWrapper{
+        padding-left: 5%;
+    }
+    
 }
 
 
@@ -2167,6 +2171,10 @@ button[type="submit"]{
         margin-left: 0;
     }
     
+    
+     .formWrapper{
+        padding-left: 5%;
+    }
 
 }
 
@@ -2257,6 +2265,10 @@ button[type="submit"]{
     
     fieldset{
         margin-left: 0;
+    }
+    
+     .formWrapper{
+        padding-left: 5%;
     }
  
 }

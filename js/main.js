@@ -19,65 +19,107 @@ var email2ValidError = document.querySelector("#email2ValidError");
 var msgValidError = document.querySelector("#msgValidError");
 
 
+var frmNameAjq = $("#frmNameA");
+var frmEmailAjq = $("#frmEmailA");
+var frmEmailCjq = $("#frmEmailC");
+var messagejq = $("#message");
 
 
+var formInfo = {};
 
-/*****************   Check name has been entered into form and that its valid   *******************/
+
+/*****   Check name has been entered into form and that its valid  ~~   *****/ 
+
 
     function initConfName(){
-        
-        frmNameA.addEventListener("blur", verifyName);
-        
-            function verifyName(input){
-                input = input.target;
-                
-                if((input.value.length === 0) || (input.value.length >= 51)){
+    
+        /*  bind input via theText to keys  */
+        frmNameAjq.on("keydown keypress", function (event) {
+            console.log(' frmNameAjq.on  keydown keypress');
+            
+                // catch enter key = submit (Safari on iPhone=10)
+            if ((event.which == 10 || event.which == 13) && (event.target.value !== '')) {
+                event.preventDefault();
+                frmNameAjq.blur();
+            }
+                else {
+                    return;
+                }
+        });
+
+    
+        frmNameAjq.on("blur", function (event) {
+            event.preventDefault();
+            console.log('frmNameAjq');
+            checkName(event);
+        });
+ 
+    
+    
+        function checkName(event){
+            if((event.target.value === 0) || (event.target.value >= 51)){
                     //input.setCustomValidity('Name must be between 1 and 26 characters');
                     nameValidError.setAttribute('data-validityerror', 'true');
-                    console.log("Name must be between 1 and 26 characters", frmNameA.value, input.value);
+                    console.log("Name must be between 1 and 26 characters", event.target.value);
                 }
                 else{
+                    console.log('frmNameAjq  event.target.value = ' + event.target.value);
+                    formInfo.name = event.target.value;
                     frmEmailA.disabled = false;
                     frmEmailA.className = "highliteInput";
                     nameValidError.setAttribute('data-validityerror', 'false');
                     nameTick.setAttribute('data-tickvalid', 'true');
-                }
-
-            }
-        
+                    }
+        }
     }
 
 
 
-
-
-
-
-
-/*****************   Check first email entered into form and that its valid   *******************/
+/********   Check first email entered into form and that its valid  ~~ ******/
 
     function initCheckEmailRegex(){
-        frmEmailA.addEventListener("blur", verifyEmailRegex);
         
-        function verifyEmailRegex(input) {
-          input = input.target;
-          
-          if (/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/.test(input.value) === false) {
+        frmEmailAjq.on("keydown keypress", function (event) {
+            
+             console.log('frmEmailAjq.on  keydown keypress');
+                // catch enter key = submit (Safari on iPhone=10)
+            if ((event.which == 10 || event.which == 13) && (event.target.value !== '')) {
+                event.preventDefault();
+                frmEmailAjq.blur();
+            }
+            else {
+                   return;
+                }
+        });
+
+    
+        frmEmailAjq.on("blur", function (event) {
+            console.log('frmEmailAjq');
+            event.preventDefault();
+            checkEmail(event);
+        });
+ 
+        
+    
+        function checkEmail(event){
+            console.log('frmEmailAjq   event.target.value = ' + event.target.value);
+            
+            if (/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/.test(event.target.value) === false) {
             // the provided value doesn't match the primary email address
             //input.setCustomValidity('The two email addresses must match.');
             email1ValidError.setAttribute('data-validityerror', 'true');
-            console.log("email not correct format", input.value);
-          } else {
+            console.log("email not correct format", event.target.value);
+            }
+            
+            else {
             // input is valid -- reset the error message
+              console.log('frmEmailAjq is valid');
               email1ValidError.setAttribute('data-validityerror', 'false');
               email1Tick.setAttribute('data-tickvalid', 'true');
               elem.disabled = false;
               elem.className = "highliteInput";
           }
-         
         }
-        
-        
     }
 
 
@@ -85,61 +127,105 @@ var msgValidError = document.querySelector("#msgValidError");
 
 
 
-/*****************   Check second email entered is identical to first email   *******************/
 
-      function initConfirmEmail() {
-        
-        elem.addEventListener("blur", verifyEmail);
-        
-          function verifyEmail(input) {
-          input = input.target;
-          console.log("checking if emails match");
-          
-        if (input.value != frmEmailA.value) {
-            // the provided value doesn't match the primary email address
-            //input.setCustomValidity('The two email addresses must match.');
-            email2ValidError.setAttribute('data-validityerror', 'true');
-            console.log("E-mail addresses do not match   first email = " + frmEmailA.value + "      second email =" + input.value);
-          } else {
-            // input is valid -- reset the error message
-              msg.disabled = false;
-              msg.className = "highliteInput";
-              email2ValidError.setAttribute('data-validityerror', 'false');
-              email2Tick.setAttribute('data-tickvalid', 'true');
-              
-          }
-         
+
+/********   Check second email entered is identical to first email  ~~ **********/
+
+    function initConfirmEmail(){
+    
+        /*  bind input via theText to keys  */
+        frmEmailCjq.on("keydown keypress", function (event) {
+            console.log(' frmEmailCjq.on  keydown keypress');
+            
+                // catch enter key = submit (Safari on iPhone=10)
+            if ((event.which == 10 || event.which == 13) && (event.target.value !== '')) {
+                event.preventDefault();
+                frmEmailCjq.blur();
+            }
+                else {
+                    return;
+                }
+        });
+
+    
+        frmEmailCjq.on("blur", function (event) {
+            event.preventDefault();
+            console.log('frmEmailCjq');
+            verifyEmail(event);
+        });
+ 
+    
+    
+        function verifyEmail(event){
+            console.log("checking if emails match");
+            
+            if(event.target.value !== frmEmailA.value){
+                    // the provided value doesn't match the primary email address
+                    //input.setCustomValidity('The two email addresses must match.');
+                    email2ValidError.setAttribute('data-validityerror', 'true');
+                    console.log("E-mail addresses do not match   first email = " + frmEmailA.value + "      second email =" + event.target.value);
+                }
+                else{
+                    console.log('frmEmailCjq  event.target.value = ' + event.target.value);
+                    formInfo.email = event.target.value;
+                     // input is valid -- reset the error message
+                    msg.disabled = false;
+                    msg.className = "highliteInput";
+                    email2ValidError.setAttribute('data-validityerror', 'false');
+                    email2Tick.setAttribute('data-tickvalid', 'true');
+                    }
         }
-          
-      }
+    }
 
 
 
 
 
 
-/*****************   Check message entered is 1 to 300 characters long   *******************/
 
-    function initConfMesg(){
+
+/*********   Check message entered is 1 to 300 characters long   ~~ *******/
+
+
+function initConfMesg(){
         
-        msg.addEventListener("blur", verifyMsg);
+        messagejq.on("keydown keypress", function (event) {
+            
+             console.log('messagejq.on  keydown keypress');
+                // catch enter key = submit (Safari on iPhone=10)
+            if ((event.which == 10 || event.which == 13) && (event.target.value !== '')) {
+                event.preventDefault();
+                messagejq.blur();
+            }
+            else {
+                   return;
+                }
+        });
+
+    
+        messagejq.on("blur", function (event) {
+            console.log('messagejq');
+            event.preventDefault();
+            verifyMsg(event);
+        });
+ 
         
-            function verifyMsg(input){
-                input = input.target;
-                
-                if((input.value.length === 0) || (input.value.length >= 301)){
+    
+        function verifyMsg(event){
+            console.log('messagejq   event.target.value = ' + event.target.value);
+            formInfo.message = event.target.value;
+            
+            if((event.target.value.length === 0) || (event.target.value.length >= 301)){
                     //input.setCustomValidity('Message must be between 1 and 300 characters');
                     msgValidError.setAttribute('data-validityerror', 'true');
-                    console.log("Message must be between 1 and 300 characters", msg.value, input.value);
+                    console.log("Message must be between 1 and 300 characters", event.target.value);
                 }
                 else{
                     sendButton.disabled = false;
                     msgValidError.setAttribute('data-validityerror', 'false');
                     msgTick.setAttribute('data-tickvalid', 'true');
                 }
-
-            }
-        
+        }
     }
 
 
@@ -147,7 +233,8 @@ var msgValidError = document.querySelector("#msgValidError");
 
 
 
-/*****************   Check entire form is valid and only if it is valid allow it to be submitted    *********/
+
+/*****  Check entire form is valid and only if it is valid allow it to be submitted  ****/
 
       function initForm() {
         form.addEventListener("submit", function(evt) {
@@ -157,27 +244,24 @@ var msgValidError = document.querySelector("#msgValidError");
             return false;
           } 
             else {
-                   // don't submitt here bu use send button on submitt instead
+                   // don't submitt here but use send button on submitt instead
                 }
         });
       }
 
 
 
-/*****************     When the submit button is enabled can submit via ajax    ***************/
+/*********    When the submit button is enabled can submit via ajax    *******/
 
 $('#contactForm').on('submit', function(e) {
-	e.preventDefault();
-    var name = $( "input[type=text][name=name]" ).val();
-    var email = $( "input[type=email][name=email]" ).val();
-    var comments = $("textarea[name=message]").val();
+	e.preventDefault();  
     
 	$.ajax({
 		url: '//formspree.io/tom@appijumbo.com',
 		method: 'POST',
-		data:{ name:name,
-              email:email, 
-              comments:comments,
+		data:{ name:formInfo.name,
+              email:formInfo.email, 
+              comments:formInfo.message,
               _subject:"An Appijumbo form Submission",
              },
 		dataType: 'json',
@@ -198,10 +282,7 @@ $('#contactForm').on('submit', function(e) {
 
 
 
-
-
-
-/*****************   Add 'Dirtyclass' (invalid) to form input listners, this controls valid/ invalid css   ****/
+/**  Add 'Dirtyclass' (invalid) to form input listners, this controls valid/ invalid css **/
 
       function initInputs() {
          var inputs_len = inputs.length;
