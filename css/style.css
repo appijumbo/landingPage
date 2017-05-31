@@ -1171,6 +1171,12 @@ h4{
     background-size: contain;
 }
 
+#webLink5{ 
+    background: url("../img/landingPage_350x350.jpg");
+    background-size: contain;
+}
+
+
 /*********  app links  *********/
 
 #appLink2{ 
@@ -1206,30 +1212,6 @@ h4{
     background: url("../img/wikiview_350x350.jpg");
     background-size: contain;
 }
-
-
-
-/**********   JS 8-bit Games    ********/
-
-#gameLink1{
-    background: url("../img/pong_350x350.jpeg");
-    background-size: contain;
-}
-
-
-#gameLink2{
-    background: url("../img/spaceInv_350x350.jpg");
-    background-size: contain;
-}
-
-
-#gameLink3{
-    background: url("../img/snake_350x350.jpeg");
-    background-size: contain;
-}
-
-
-
 
 
 
