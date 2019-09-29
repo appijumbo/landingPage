@@ -1156,20 +1156,20 @@ h4{
 }
 
 
-#webLink2{
+/* #webLink2{
     background: url("../img/SEO_350x350.jpg");
     background-size: contain;
-}
+} */
 
 #webLink3{
     background: url("../img/hardie_350x350.jpg");
     background-size: contain;
 }
 
-#webLink4{
+/* #webLink4{
     background: url("../img/toastWP_350x350.jpg");
     background-size: contain;
-}
+} */
 
 #webLink5{
     background: url("../img/landingPage_350x350.jpg");
@@ -1197,23 +1197,51 @@ h4{
 }
 
 
+#appLink5{
+    background: url("../img/react-calc_350x350.jpg");
+    background-size: contain;
+}
+
 #appLink6{
+    background: url("../img/express-weather.jpg");
+    background-size: contain;
+}
+
+
+#appLink7{
     background: url("../img/weatherApp1_350x350.jpg");
     background-size: contain;
 }
 
-#appLink7{
-    background: url("../img/simon3_350x350.jpg");
+#appLink8{
+    background: url("../img/dice-game-350x350.png");
     background-size: contain;
 }
 
-
-#appLink8{
+#appLink9{
     background: url("../img/wikiview_350x350.jpg");
     background-size: contain;
 }
 
+#appLink10{
+    background: url("../img/cyberPet-console-350x350.jpg");
+    background-size: contain;
+}
 
+#appLink11{
+    background: url("../img/ubuntu-install-script350x350.jpg");
+    background-size: contain;
+}
+
+#appLink12{
+    background: url("../img/react -addressbook_350x350.jpg");
+    background-size: contain;
+}
+
+#appLink13{
+    background: url("../img/whack-a-mole_350x350.jpg");
+    background-size: contain;
+}
 
 
 
