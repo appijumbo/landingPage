@@ -1203,35 +1203,36 @@ h4{
 }
 
 #appLink6{
+    background: url("../img/node-weather-app-350x350.jpg");
+    background-size: contain;
+}
+
+#appLink7{
     background: url("../img/express-weather.jpg");
     background-size: contain;
 }
 
-
-#appLink7{
+#appLink8{
     background: url("../img/weatherApp1_350x350.jpg");
     background-size: contain;
 }
 
-#appLink8{
+#appLink9{
     background: url("../img/dice-game-350x350.png");
     background-size: contain;
 }
 
-#appLink9{
+#appLink10{
     background: url("../img/wikiview_350x350.jpg");
     background-size: contain;
 }
 
-#appLink10{
+#appLink11{
     background: url("../img/cyberPet-console-350x350.jpg");
     background-size: contain;
 }
 
-#appLink11{
-    background: url("../img/ubuntu-install-script350x350.jpg");
-    background-size: contain;
-}
+
 
 #appLink12{
     background: url("../img/react -addressbook_350x350.jpg");
@@ -1240,6 +1241,17 @@ h4{
 
 #appLink13{
     background: url("../img/whack-a-mole_350x350.jpg");
+    background-size: contain;
+}
+
+
+
+
+
+/*********  Extra links  *********/
+
+#extraLink1{
+    background: url("../img/ubuntu-install-script350x350.jpg");
     background-size: contain;
 }
 
