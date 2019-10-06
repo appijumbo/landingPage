@@ -1178,6 +1178,68 @@ h4{
 }
 
 
+
+
+/****************** Pop-up */
+
+.data-info{
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+
+.data-info::before, .data-info::after{
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+/* Triangle of speech bubble - disabled*/
+/* .data-info::before{
+    content: "";
+    border-width: 10px 8px 0 8px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.3) transparent transparent transparent;
+    top: -20px;
+    margin-left: -8px;
+} */
+
+
+.data-info::after{
+    content: attr(data-info);
+    width: 15em;
+    height: fit-content;
+    background-color: #9BFF3B;
+    color: black;
+    transition: opacity 0.1s ease-out;
+    text-align: justify;
+    line-height: 1.2em;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    padding: 4em 2em 2em 2em;
+    font-size: 0.7em;
+    box-shadow: -2px 13px 45px -9px rgba(0,0,0,0.97);
+    left: -7vw;
+
+}
+
+
+
+/* Hover states */
+
+.data-info:hover::before, .data-info:hover::after{
+    opacity: 1;
+    z-index: 1000
+}
+
+
+
+
+
+
+
+
 .link-title{
     position: relative;
     color: white;
@@ -1188,10 +1250,42 @@ h4{
     line-height: 1.4em;
     display: flex;
     flex-direction: column;
+    z-index: -5;
 }
 
 
 
+
+/* .data-info{
+    position: absolute;
+    left: 250px;
+    color: blueviolet;
+} */
+
+/* span.data-info::before {
+    content: attr(data-info);
+    position: absolute;
+    width: 25em;
+    height: fit-content;
+    top: 10vh;
+    right: -100px;
+    background-color: #0059ff;
+    color: black;
+    transition: opacity 0.1s ease-out;
+    z-index: 100;
+    text-align: justify;
+    line-height: 1.2em;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    padding: 2em 2em 2em 2em;
+    font-size: 0.8em;
+    box-shadow: -2px 13px 45px -9px rgba(0,0,0,0.97);
+}
+
+span.data-info::after {
+    left: -305px;
+    background-color: #0d9f0d;
+} */
 
 /* #webLink2{
     background: url("../img/SEO_350x350.jpg");
@@ -1324,6 +1418,7 @@ h4{
     background-position: center;
     transition: all 0.3s ease-in-out;
     box-shadow: -20px 27px 55px 0px rgba(0,0,0,0.75);
+
 }
 
 
