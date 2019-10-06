@@ -1052,10 +1052,11 @@ span.about-title{
 
 
 .logo>a>p{
-
     margin-top: 0;
     position: relative;
     top: 80px;
+    line-height: 1.3em;
+    text-align: center;
 }
 
 
