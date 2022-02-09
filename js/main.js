@@ -257,7 +257,8 @@ $('#contactForm').on('submit', function(e) {
 	e.preventDefault();  
     
 	$.ajax({
-		url: '//formspree.io/tom@appijumbo.com',
+		//url: '//formspree.io/tom@appijumbo.com',
+		url: '//formsubmit.co/tom@appijumbo.com',
 		method: 'POST',
 		data:{ name:formInfo.name,
               email:formInfo.email, 
