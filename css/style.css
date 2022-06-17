@@ -1725,6 +1725,25 @@ button[type="submit"]{
 
 
 
+}
+
+/*  ========  BLOOD GIFFY  =========  */
+/*  ================================  */
+
+  .bloodGiffyWraper {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     width: 100%;
+    }
+
+  .bloodGiffyWraper > img {
+      width: 40vw;
+      max-width: 250px;
+    }
+
+
+
 
 /*  ======================  FOOTER  ==================  */
 /*  ==================================================  */
