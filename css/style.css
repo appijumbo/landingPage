@@ -1787,13 +1787,12 @@ button[type="submit"]{
 }
 
 
-  /* .bloodGiffyWraper {
+  .bloodGiffyWraper {
      display: flex;
      flex-direction: row;
      justify-content: center;
      width: 100%;
     }
-*/
 
   .bloodGiffyWraper > img {
       width: 40vw;
